@@ -6,9 +6,10 @@ arch=('any')
 url="https://github.com/pyosek/termalyr"
 license=('MIT')
 depends=('python' 'python-requests' 'python-pyfiglet' 'python-setproctitle' 'playerctl')
+_repo="https://raw.githubusercontent.com/pyosek/termalyr/main"
 source=(
-  "termalyr.py::https://raw.githubusercontent.com/yarochek/termalyr/main/termalyr.py"
-  "launcher::https://raw.githubusercontent.com/yarochek/termalyr/main/launcher"
+  "termalyr.py::$_repo/termalyr.py"
+  "launcher::$_repo/launcher"
 )
 sha256sums=('SKIP' 'SKIP')
 
